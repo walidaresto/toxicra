@@ -26,7 +26,7 @@ def findAdmin():
 		sub_link = f.readline()
 		if not sub_link:
 			break
-		req_link = "http://"+link+sub_link"
+		req_link = "http://"+link+sub_link
 		req = Request(req_link)
 		try:
 			response = urlopen(req)
