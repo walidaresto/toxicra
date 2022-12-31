@@ -21,14 +21,13 @@ print "                                                       |                 
 def findAdmin():
 	f = open("link.txt","r");
 	link = raw_input("Enter Site Name n(ex : example.com or www.example.com ): ")
-	print "\n\nAvilable links :"
+	print "\n\nAvilable links : \n"
 	while True:
 		sub_link = f.readline()
 		if not sub_link:
 			break
-		req_link = "https://"+link+sub_link
+		req_link ="link+sub_link
 		req = Request(req_link)
-print (req_link)
 		try:
 			response = urlopen(req)
 		except HTTPError as e:
