@@ -27,7 +27,7 @@ def findAdmin():
 		if not sub_link:
 			break
 		req_link = "http://"+link+sub_link
-		req = Request(req_link)
+		print (req_link)
 		try:
 			response = urlopen(req)
 		except HTTPError as e:
